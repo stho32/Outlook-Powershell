@@ -22,7 +22,7 @@ function New-EMail {
         }
 
         $Mail.Subject = $subject
-        $Mail.HTMLBody = $body
+        $Mail.HTMLBody = $BodyHtml
         $Mail.Save()
 
         if ( $Show ) {
