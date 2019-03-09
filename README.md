@@ -13,6 +13,6 @@ Import-Module Outlook
 $content = [string](Get-Service | ConvertTo-Html)
 
 # create a new mail, display the window
-$content | New-Email -To "<Your Buddies Email>", "<Some-other-poor-guy>" -Subject "The current table of all my services" -Show
+$content | New-OutlookEmail -To "<Your Buddies Email>", "<Some-other-poor-guy>" -Subject "The current table of all my services" -Show
 ```
 
